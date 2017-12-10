@@ -13,7 +13,6 @@ get_header();
 		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		    <li data-target="#myCarousel" data-slide-to="1"></li>
 		    <li data-target="#myCarousel" data-slide-to="2"></li>
-		    <li data-target="#myCarousel" data-slide-to="3"></li>
 			</ol>
 		  <div class="carousel-inner">
 		  	<div class="contentHeader">
@@ -28,9 +27,6 @@ get_header();
 		    </div>
 		    <div class="item">
 		      <div class="dev bg3"></div>
-		    </div>
-		    <div class="item">
-		      <div class="dev bg4"></div>
 		    </div>
 		  </div>
 		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">

@@ -3,19 +3,19 @@
     width: 100%;
     border-bottom: solid 20px $primary-color;
     .carousel-inner {
-        height: 50vh;
+        height: calc(50vh - 20px);
         .dev {
             height: 48vh;
             width: 100%;
-            background-image: url('img/src/bg1.png');
+            background-image: url('img/src/bg1.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             &.bg2 {
-                background-image: url('img/src/bg2.png');
+                background-image: url('img/src/bg2.jpg');
             }
             &.bg3 {
-                background-image: url('img/src/bg3.png');
+                background-image: url('img/src/bg3.jpg');
             }
         }
     }
