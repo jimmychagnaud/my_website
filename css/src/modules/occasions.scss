@@ -1,0 +1,158 @@
+.occasionArchive {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-align: center;
+  .colArchiveOccasion {
+    margin-top: 20px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 330px;
+    margin: 15px;
+    padding: 0;
+    border: solid 1px #eee;
+    overflow: hidden;
+    &:hover {
+      border: solid 1px $gray;
+      .imageOccasion {
+        .hover {
+          top: 0;
+          visibility: visible;
+        }
+      }
+      .textOccasion {
+        background-color: $gray-dark;
+        transition-duration: 0.8s;
+        color: #fff;
+        h3 {
+          color: $primary-color;
+        }
+      }
+    }
+    @media (min-width: $screen-md-min) {
+      width: 24%;
+    }
+    @media (max-width: $screen-md-min) {
+      width: 85%;
+    }
+    .imageOccasion {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 250px;
+      .hover {
+        z-index: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 250px;
+        width: 100%;
+        height: 250px;
+        padding: 20px 15px;
+        color: #FFF;
+        background-color: rgba(35, 31, 32, 0.65);
+        transition-property: top;
+        transition-duration: 0.8s;
+        p {
+          text-align: left;
+          line-height: 1.4;
+          max-height: 250px;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .textOccasion {
+      padding: 10px 10px 10px 10px;
+      height: 80px;
+      background-color: #fff;
+      color: $gray;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      z-index: 9999999;
+      position: absolute;
+      left: 0;
+      right: 0;
+      h3 {
+        margin: 0;
+        color: $gray-dark;
+      }
+      .occasionPrix {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        font-size: 25px;
+        font-weight: 600;
+        color: $primary-color;
+      }
+      .occasionInfos {
+        padding: 0;
+        h3 {
+          font-weight: 600;
+        }
+        p {
+          font-size: 13px;
+          margin: 0;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.occasionSingle {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-align: center;
+  .colSingle {
+    margin-top: 25px;
+    .carousel {
+      height: 35vh;
+      width: 100%;
+      .carousel-inner {
+        height: 35vh;
+        .imageSingle {
+          height: 35vh;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+      }
+    }
+    &.textOccasion {
+      text-align: left;
+      .divPrice {
+        text-align: right;
+        .price {
+          text-align: right;
+          font-size: 3.5em;
+          color: $primary-color;
+          span {
+            font-size: .7em
+          }
+        }
+        .phoneNumber {
+          font-size: 13px;
+          padding: 2px;
+        }
+        a {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .caracteristiquesComp {
+    margin-top: 15px;
+    background-color: $gray;
+    .caracteristiques {
+      column-count: 3;
+      text-align: left;
+    }
+  }
+}

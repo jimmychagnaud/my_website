@@ -1,0 +1,31 @@
+#content {
+  .contactForm {
+    margin-bottom: 75px;
+    .wpcf7-form {
+      label {
+        text-align: left;
+      }
+      .contactForm {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .wpcf7-response-output {
+        margin: 0;
+        color: #E03021;
+        font-weight: 600;
+      }
+      .wpcf7-validation-errors {
+        border: none;
+      }
+      .wpcf7-not-valid-tip {
+        color: #E03021;
+        font-size: 10.5px;
+        font-weight: 600;
+        display: block;
+      }
+    }
+  }
+  .contentPage {
+    margin-top: 75px;
+  }
+}

@@ -1,0 +1,56 @@
+.bottom {
+  border-top: 2px solid $gray;
+  text-align: center;
+  .row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    .textBottom {
+      float: left;
+      width: 80%;
+      text-align: left;
+      margin-left: 15px;
+      p {
+        margin: 0 auto;
+      }
+      @media (max-width: $screen-md-max) {
+        float: none;
+        width: 100% !important;
+        text-align: center;
+        margin: 10px 0;
+        p {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+    .imageBottom {
+      float: left;
+      .bottomIcon {
+        height: 50px;
+        fill: #fff;
+      }
+      @media (max-width: $screen-md-max) {
+        float: none;
+      }
+    }
+  }
+}
+
+.centreVerticalement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-footer {
+  background-color: $gray;
+  .site-info {
+    height: 25px;
+    p {
+      margin: 0;
+      display: inline;
+      vertical-align: -webkit-baseline-middle;
+    }
+  }
+}

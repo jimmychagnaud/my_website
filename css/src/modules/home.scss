@@ -1,0 +1,106 @@
+.site-main {
+  .customPost {
+    text-align: center;
+    .customPostImage {
+      background-color: #FFF;
+      min-height: 125px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: $screen-xs-max) {
+        display: none
+      }
+      .svgHome {
+        height: 75px;
+        width: 75px;
+        fill: $primary-color;
+      }
+    }
+    .customPostText {
+      background-color: $primary-color;
+      min-height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: #000;
+      }
+      a:hover {
+        text-decoration: none;
+        h4 {
+          color: #000;
+        }
+      }
+      .svgHome {
+        display: none;
+        height: 75px;
+        width: 75px;
+        margin: 15px auto;
+        fill: #FFF;
+        @media (max-width: $screen-xs-max) {
+          display: block;
+        }
+      }
+    }
+  }
+  .contentPage {
+    text-align: center;
+    margin-bottom: 75px;
+    .contentCol {
+      display: inline-block;
+      float: none;
+      width: 33%;
+      margin: 25px 0px;
+      height: 225px;
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+      }
+      .occasionImage {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 190px;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  .centreVerticalement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .col {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    @media (min-width: $screen-xs-max) {
+      width: 24%;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  .animated {
+    animation-duration: .9s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
+}
