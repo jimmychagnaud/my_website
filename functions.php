@@ -31,109 +31,30 @@ function my_acf_init()
 }
 add_action('acf/init', 'my_acf_init');
 
-function create_post_occasions()
-{
-  register_post_type('occasions', [
-    'labels'            => [
-      'name'          => __('Occasions'),
-      'singular_name' => __('Occasions'),
-      'add_new_item'  => ('Ajouter une nouvelle occasion'),
-      'edit_item'     => __('Modifier une occasion'),
-      'search_item'   => __('Rechercher une occasion'),
-      'all_items'     => __('Toutes les occasions'),
-      'view_items'    => __('Voir les occasions'),
-      'view_item'     => __('Voir l\'occasion'),
-    ],
-    'public'            => true,
-    'has_archive'       => true,
-    'rewrite'           => ['slug' => 'occasions'],
-    'capability_type'   => 'page',
-    'menu_icon'         => 'dashicons-admin-network',
-    'supports'          => ['title', 'thumbnail'],
-    'show_in_menu'      => true,
-    'show_in_nav_menus' => true,
-  ]);
-}
-add_action('init', 'create_post_occasions');
-
-function create_post_marques()
-{
-  register_post_type('marques', [
-    'labels'            => [
-      'name'          => __('Marques'),
-      'singular_name' => __('Marques'),
-      'add_new_item'  => ('Ajouter une nouvelle marque'),
-      'edit_item'     => __('Modifier une marque'),
-      'search_item'   => __('Rechercher une marque'),
-      'all_items'     => __('Toutes les marques'),
-      'view_items'    => __('Voir les marques'),
-      'view_item'     => __('Voir la marque'),
-    ],
-    'public'            => true,
-    'has_archive'       => true,
-    'rewrite'           => ['slug' => 'marques'],
-    'capability_type'   => 'page',
-    'menu_icon'         => 'dashicons-images-alt2',
-    'supports'          => ['title', 'thumbnail'],
-    'show_in_menu'      => true,
-    'show_in_nav_menus' => true,
-  ]);
-}
-add_action('init', 'create_post_marques');
-
-function create_post_prestations()
-{
-  register_post_type('prestations', [
-    'labels'            => [
-      'name'          => __('Prestations'),
-      'singular_name' => __('Prestations'),
-      'add_new_item'  => ('Ajouter une nouvelle prestation'),
-      'edit_item'     => __('Modifier une prestation'),
-      'search_item'   => __('Rechercher une prestation'),
-      'all_items'     => __('Toutes les prestations'),
-      'view_items'    => __('Voir les prestations'),
-      'view_item'     => __('Voir la prestation'),
-    ],
-    'public'            => true,
-    'has_archive'       => true,
-    'rewrite'           => ['slug' => 'prestations'],
-    'capability_type'   => 'page',
-    'menu_icon'         => 'dashicons-admin-tools',
-    'supports'          => ['title', 'thumbnail'],
-    'show_in_menu'      => true,
-    'show_in_nav_menus' => true,
-  ]);
-}
-add_action('init', 'create_post_prestations');
-
-function create_post_block()
-{
-  register_post_type('block', [
-    'labels'            => [
-      'name'          => __('Block'),
-      'singular_name' => __('Block'),
-      'add_new_item'  => ('Ajouter un nouveau block'),
-      'edit_item'     => __('Modifier un block'),
-      'search_item'   => __('Rechercher un block'),
-      'all_items'     => __('Tous les blocks'),
-      'view_items'    => __('Voir les blocks'),
-      'view_item'     => __('Voir le block'),
-    ],
-    'capabilities' => array(
-      'create_posts' => 'do_not_allow',
-    ),
-    'map_meta_cap' => true,
-    'public'            => true,
-    'has_archive'       => true,
-    'rewrite'           => ['slug' => 'block'],
-    'capability_type'   => 'page',
-    'menu_icon'         => 'dashicons-align-right',
-    'supports'          => ['title', 'thumbnail'],
-    'show_in_menu'      => true,
-    'show_in_nav_menus' => false,
-  ]);
-}
-add_action('init', 'create_post_block');
+// function create_post_occasions()
+// {
+//   register_post_type('occasions', [
+//     'labels'            => [
+//       'name'          => __('Occasions'),
+//       'singular_name' => __('Occasions'),
+//       'add_new_item'  => ('Ajouter une nouvelle occasion'),
+//       'edit_item'     => __('Modifier une occasion'),
+//       'search_item'   => __('Rechercher une occasion'),
+//       'all_items'     => __('Toutes les occasions'),
+//       'view_items'    => __('Voir les occasions'),
+//       'view_item'     => __('Voir l\'occasion'),
+//     ],
+//     'public'            => true,
+//     'has_archive'       => true,
+//     'rewrite'           => ['slug' => 'occasions'],
+//     'capability_type'   => 'page',
+//     'menu_icon'         => 'dashicons-admin-network',
+//     'supports'          => ['title', 'thumbnail'],
+//     'show_in_menu'      => true,
+//     'show_in_nav_menus' => true,
+//   ]);
+// }
+// add_action('init', 'create_post_occasions');
 
 register_nav_menus(array(
   'Top'    => 'Navigation principale',

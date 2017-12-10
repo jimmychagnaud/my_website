@@ -1,82 +1,49 @@
 <?php
 /**
- * @package Autelis
- * @since Autelis 1.0
+ * @package Jimmy Chagnaud
+ * @since Jimmy Chagnaud 1.0
  * Template Name: Accueil
  */
 
 get_header();
 ?>
-<?php $prestaChoices = get_field('servicesChoice');
-			if ($prestaChoices): ?>
-	<div class="customPost">
-		<div class="customPostImage container-fluid">
-			<div class="row">
-				<div class="container">
-					<?php foreach ($prestaChoices as $post):
-									setup_postdata($post);
-									$prestationImage = get_field('prestationImage');
-					?>
-					<a href="/prestations">
-						<div class="col-md-3 col-xs-12 col">
-							<?php echo file_get_contents($prestationImage);?>
-						</div>
-					</a>
-				<?php endforeach;?>
-				</div>
-			</div>
-		</div>
-		<div class="customPostText container-fluid">
-			<div class="row">
-				<div class="container">
-					<?php foreach ($prestaChoices as $post):
-									setup_postdata($post);
-									$prestationImage = get_field('prestationImage');
-									$prestationTexte = get_field('prestationTexte');
-									$prestationTexte = strip_tags($prestationTexte);
-									$prestationTexte = strlen($prestationTexte) > 130 ? substr($prestationTexte,0,130)."..." : $prestationTexte;
-					?>
-					<a href="/prestations">
-						<div class="col-md-3 col-xs-12 col">
-							<?php echo file_get_contents($prestationImage);?>
-							<h4><?php echo the_title();?></h4>
-							<p><?php echo $prestationTexte;?></p>
-						</div>
-					</a>
-					<?php endforeach;?>
-				</div>
-			</div>
-		</div>
-	</div>
-	<?php endif; wp_reset_postdata();?>
-	<div class="contentPage container">
-		<div class="row text-center textContact">
-			<div class="col-md-8 col-md-offset-2">
-				<?php while (have_posts()) {
-						    the_post();
-						    the_content();
-						  };
-						  wp_reset_query();
-				?>
-			</div>
-		</div>
-		<?php $occasionsChoices = get_field('occasionsChoice');
-			if ($occasionsChoices): ?>
-		<h2 class="text-center">Nos occasions à la une</h2>
-		<div class="row">
-			<?php foreach ($occasionsChoices as $post):
-							setup_postdata($post);
-							$occasionImage = get_field('occasionImage');
-			?>
-			<div class="col-md-4 col-xs-12 text-center contentCol">
-				<a href="<?php echo the_permalink() ?>">
-					<div style="background-image: url(<?php echo $occasionImage[0]['url'];?>);" class="occasionImage"></div>
-					<p><?php echo the_title();?></p>
-				</a>
-			</div>
-			<?php endforeach;?>
-		</div>
-	</div>
-	<?php endif; wp_reset_postdata();?>
-</div>
+<div class="slider">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		    <li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+		  <div class="carousel-inner">
+		  	<div class="contentHeader">
+		  		<h1>Développeur web</h1>
+					<a href="/contact" class="btn btn-primary">Contactez moi</a>
+		  	</div>
+		    <div class="item active">
+		    	<div class="dev"></div>
+		    </div>
+		    <div class="item">
+		      <div class="dev bg2"></div>
+		    </div>
+		    <div class="item">
+		      <div class="dev bg3"></div>
+		    </div>
+		    <div class="item">
+		      <div class="dev bg4"></div>
+		    </div>
+		  </div>
+		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		    <span class="sr-only">Precedent</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right"></span>
+		    <span class="sr-only">Suivant</span>
+		  </a>
+    </div>
+  </div>  
+  <main id="main" class="site-main container">
+    <h1>hello world !</h1>
+
 <?php get_footer();?>
