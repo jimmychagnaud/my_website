@@ -1,0 +1,30 @@
+.portfolioSingle {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-align: center;
+  background-color: #eee;
+  box-shadow: 1px 1px 5px 0px #656565;
+  .colSingle {
+    margin-top: 25px;
+    .carousel {
+      height: 100%;
+      width: 100%;
+      border: unset;
+      .carousel-inner {
+        height: 50vh;
+        .imageSingle {
+          height: 50vh;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  .textPortfolio {
+    margin-top: 40px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}

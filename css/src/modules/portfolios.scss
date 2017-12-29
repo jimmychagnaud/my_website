@@ -1,0 +1,97 @@
+.portfoliosArchive {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-align: center;
+  .colArchiveportfolios {
+    margin-top: 20px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 330px;
+    margin: 15px;
+    padding: 0;
+    border: solid 1px #eee;
+    overflow: hidden;
+    &:hover {
+      border: solid 1px $gray;
+      .imageportfolios {
+        .hover {
+          top: 0;
+          visibility: visible;
+        }
+      }
+      .textportfolios {
+        background-color: $gray-dark;
+        transition-duration: 0.8s;
+        color: #fff;
+        h3 {
+          color: $primary-color;
+        }
+      }
+    }
+    @media (min-width: $screen-md-min) {
+      width: 47%;
+    }
+    @media (max-width: $screen-md-min) {
+      width: 85%;
+    }
+    .imageportfolios {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 250px;
+      .hover {
+        z-index: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 250px;
+        width: 100%;
+        height: 250px;
+        padding: 20px 15px;
+        color: #FFF;
+        background-color: rgba(35, 31, 32, 0.65);
+        transition-property: top;
+        transition-duration: 0.8s;
+        p {
+          text-align: left;
+          line-height: 1.4;
+          max-height: 250px;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .textportfolios {
+      padding: 10px 10px 10px 10px;
+      height: 80px;
+      background-color: #fff;
+      color: $gray;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      z-index: 9999999;
+      position: absolute;
+      left: 0;
+      right: 0;
+      h3 {
+        margin: 0;
+        color: $gray-dark;
+      }
+      .portfoliosInfos {
+        padding: 0;
+        h3 {
+          font-weight: 600;
+        }
+        p {
+          font-size: 13px;
+          margin: 0;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

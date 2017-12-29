@@ -28,7 +28,7 @@
 <body <?php body_class();?>>
   <div id="headerPage">
     <header>
-			<nav class="navbar navbar-default">
+			<nav class="navbar <?php echo ((is_front_page()) ? 'navbar-home' : 'navbar-default'); ?>">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-top" aria-expanded="false">
 		        <span class="sr-only">Afficher le menu</span>
@@ -42,11 +42,11 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="navbar-collapse-top">
 	       	<?php wp_nav_menu([
-						 			'container' => 'ul',
-								  'theme_location' => 'Top',
-								  'menu_id'        => 'top-menu',
-								  'menu_class'     => 'nav navbar-nav navbar-right',
-								]);?>
+						'container' => 'ul',
+						'theme_location' => 'Top',
+						'menu_id'        => 'top-menu',
+						'menu_class'     => 'nav navbar-nav navbar-right',
+					]);?>
 		    </div>
 			</nav>
 		</header>

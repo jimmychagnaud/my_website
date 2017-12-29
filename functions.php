@@ -31,30 +31,30 @@ function my_acf_init()
 }
 add_action('acf/init', 'my_acf_init');
 
-// function create_post_occasions()
-// {
-//   register_post_type('occasions', [
-//     'labels'            => [
-//       'name'          => __('Occasions'),
-//       'singular_name' => __('Occasions'),
-//       'add_new_item'  => ('Ajouter une nouvelle occasion'),
-//       'edit_item'     => __('Modifier une occasion'),
-//       'search_item'   => __('Rechercher une occasion'),
-//       'all_items'     => __('Toutes les occasions'),
-//       'view_items'    => __('Voir les occasions'),
-//       'view_item'     => __('Voir l\'occasion'),
-//     ],
-//     'public'            => true,
-//     'has_archive'       => true,
-//     'rewrite'           => ['slug' => 'occasions'],
-//     'capability_type'   => 'page',
-//     'menu_icon'         => 'dashicons-admin-network',
-//     'supports'          => ['title', 'thumbnail'],
-//     'show_in_menu'      => true,
-//     'show_in_nav_menus' => true,
-//   ]);
-// }
-// add_action('init', 'create_post_occasions');
+function create_post_portfolios()
+{
+  register_post_type('portfolios', [
+    'labels'            => [
+      'name'          => __('portfolios'),
+      'singular_name' => __('portfolios'),
+      'add_new_item'  => ('Ajouter un nouveau portfolio'),
+      'edit_item'     => __('Modifier un portfolio'),
+      'search_item'   => __('Rechercher un portfolio'),
+      'all_items'     => __('Tous les portfolios'),
+      'view_items'    => __('Voir les portfolios'),
+      'view_item'     => __('Voir le portfolio'),
+    ],
+    'public'            => true,
+    'has_archive'       => true,
+    'rewrite'           => ['slug' => 'portfolios'],
+    'capability_type'   => 'page',
+    'menu_icon'         => 'dashicons-book-alt',
+    'supports'          => ['title', 'thumbnail'],
+    'show_in_menu'      => true,
+    'show_in_nav_menus' => true,
+  ]);
+}
+add_action('init', 'create_post_portfolios');
 
 register_nav_menus(array(
   'Top'    => 'Navigation principale',
