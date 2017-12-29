@@ -1,0 +1,20 @@
+#wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon:before {
+  background-image: url(https://dist.creationsitespau.fr/wp/logo-wp-admin.png?reload=3) !important;
+  background-position: 0 0;
+  color: rgba(0, 0, 0, 0);
+}
+
+#wpadminbar #wp-admin-bar-wp-logo.hover>.ab-item .ab-icon {
+  background-position: 0 0;
+}
+
+#wp-admin-bar-wp-logo>.ab-item {
+  pointer-events: none !important;
+  cursor: default;
+}
+
+.login h1 a {
+  background-image: url(https://dist.creationsitespau.fr/wp/logo-login.png?reload=4) !important;
+  background-size: 110px;
+  width: auto;
+}
