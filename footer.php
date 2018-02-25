@@ -52,6 +52,7 @@
   </footer>
   <script src="<?php echo get_template_directory_uri() ?>/js/jquery-3.2.1.min.js"></script>
   <script src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/js/app.js"></script>
   <?php if (is_front_page()): ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
   <script src="<?php echo get_template_directory_uri() ?>/js/app.js"></script>
