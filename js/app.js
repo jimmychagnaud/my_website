@@ -19,3 +19,4 @@ function hideViewer() {
     $('.viewer').css('display', 'none');
   }, 300);
 }
+var s = skrollr.init();

@@ -131,7 +131,7 @@ add_action('admin_menu', 'my_footer_shh');
 // Change footer links
 function change_footer_admin()
 {
-  echo 'Merci de faire confiance à <a href="https://wehub.fr" target="_blank">Wehub</a> | <a href="https://wehub.fr/contact" target="_blank">Signaler un bug </a>';
+  echo 'Merci de m\'avoir fait confiance <a href="https://creationsitespau.fr" target="_blank">Chagnaud jimmy</a> | <a href="https://creationsitespau.fr/contact" target="_blank">Signaler un bug </a>';
 }
 add_filter('admin_footer_text', 'change_footer_admin');
 
@@ -161,15 +161,14 @@ add_filter('contextual_help', 'remove_help_tabs', 999, 3);
 // Change link logo
 function custom_loginlogo_url($url)
 {
-  return 'https://wehub.fr/';
+  return 'https://creationsitespau.fr/';
 }
 add_filter('login_headerurl', 'custom_loginlogo_url');
 
 // Add styles and scripts
 function my_admin_theme_style()
 {
-  wp_enqueue_style('wehub-theme', 'https://dist.wehub.fr/wp/style-wp-admin.css');
-  wp_enqueue_script('wehub-theme', 'https://dist.wehub.fr/wp/scripts-wp-admin.js');
+  wp_enqueue_style('wehub-theme', 'https://dist.creationsitespau.fr/wp/style-wp-admin.css');
 }
 add_action('admin_enqueue_scripts', 'my_admin_theme_style');
 add_action('login_enqueue_scripts', 'my_admin_theme_style');
