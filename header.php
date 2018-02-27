@@ -23,8 +23,8 @@
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo('pingback_url');?>">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url')?>">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> -->
   <?php wp_head();?>
 </head>
 <body <?php body_class();?>>

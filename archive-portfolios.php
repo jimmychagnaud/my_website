@@ -41,11 +41,11 @@ $portfolios= new WP_Query(array(
 				</div>
 			</a>
 		</div>
-	</div>
 	<?php };
 	$total_pages = $portfolioss->max_num_pages;
   if ($total_pages > 1):
     $current_page = max(1, get_query_var('paged')); ?>
+	</div>
 	<div class="pagination">
 		<?php	echo paginate_links(array(
       'base' => get_pagenum_link(1) . '%_%',
