@@ -9,22 +9,10 @@
 <html <?php language_attributes();?> style="margin-top: 0 !important;">
 <head>
   <meta charset="<?php bloginfo('charset');?>">
-  <meta name="viewport" content="width=device-width">
-  <link rel="manifest" href="manifest.json">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="Jimmy Chagnaud">
-	<meta name="apple-mobile-web-app-title" content="Jimmy Chagnaud">
-	<meta name="theme-color" content="#89b700">
-	<meta name="msapplication-navbutton-color" content="#89b700">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="msapplication-starturl" content="/">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo('pingback_url');?>">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url')?>">
-	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> -->
   <?php wp_head();?>
 </head>
 <body <?php body_class();?>>
